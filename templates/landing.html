@@ -1,8 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<section class="intro">
+    <div class="content">
+        <h1><span class="light">three</span><span class="bold">thirds</span></h1>
+        <img src="emblem.png">
+        <h2>We build custom AI solutions for your company</h2>
+    </div>
+</section>
+
 <h1 class="title">
-  This is my blog made with Zola.
+    This is my blog made with Zola.
 </h1>
 <p>Click <a href="{{ section.permalink }}blog/">here</a> to see my posts.</p>
 {% endblock content %}
