@@ -106,87 +106,31 @@
                     </figcaption>
                 </figure>
             </li>
+        </ul>
     </div>
 </section>
+
+{% set data=load_data(path="content/data."~lang~".toml") %}
 
 <section class="team">
     <div class="content">
         <h2>Our Team</h2>
 
         <ul class="grid">
-            <li>
-                <figure class="person">
-                    <img src="{{ get_url(path='team/jonas.jpg') }}" alt="Jonas Kubilius">
-                    <figcaption>
-                        <p class="name">Jonas Kubilius, PhD, MIT'08</p>
-                        <p class="position">Co-Founder and Senior AI Engineer</p>
-                        <p>AI researcher & machine vision expert with publications at NeurIPS and 1000+ citations</p>
-                        <a href="https://www.linkedin.com/in/qbilius/"><img src="{{ get_url(path='icons/linkedin-dark.png') }}" width="20px"></a>
-                    </figcaption>
-                </figure>
-            </li>
 
+            {% for c in data.team_members %}
             <li>
                 <figure class="person">
-                    <img src="{{ get_url(path='team/paulius.jpg') }}" alt="Paulius Šarka">
+                    <img src="{{get_url(path=c.img)}}" alt="{{c.name}}">
                     <figcaption>
-                        <p class="name">Paulius Šarka, PhD</p>
-                        <p class="position">Co-Founder and Senior AI Engineer</p>
-                        <p>Data product owner & engineer of sensor-based solutions, 5+ years of industry experience / ex-Sony</p>
-                        <a href="https://www.linkedin.com/in/pauliussarka/"><img src="{{ get_url(path='icons/linkedin-dark.png') }}" width="20px"></a>
+                        <p class="name">{{c.name_long}}</p>
+                        <p class="position">{{c.position}}</p>
+                        <p>{{c.description}}</p>
+                        <a href="{{c.linkedin}}"><img src="{{ get_url(path='icons/linkedin-dark.png') }}" width="20px"></a>
                     </figcaption>
                 </figure>
             </li>
-
-            <li>
-                <figure class="person">
-                    <img src="{{ get_url(path='team/linas.jpg') }}" alt="Linas Klimas">
-                    <figcaption>
-                        <p class="name">Linas Klimas</p>
-                        <p class="position">AI Engineer</p>
-                        <p>Reinforcement learning expert & backend engineer
-                        </p>
-                        <a href="https://www.linkedin.com/in/linasklimas/"><img src="{{ get_url(path='icons/linkedin-dark.png') }}" width="20px"></a>
-                    </figcaption>
-                </figure>
-            </li>
-
-            <li>
-                <figure class="person">
-                    <img src="{{ get_url(path='team/grazvydas.jpg') }}" alt="Gražvydas Šemetulskis">
-                    <figcaption>
-                        <p class="name">Gražvydas Šemetulskis, PhD</p>
-                        <p class="position">AI Engineer</p>
-                        <p>Fraud detection expert & key contributor to HyphBot detection / ex-AdForm</p>
-                        <a href="https://www.linkedin.com/in/grazvydasem/"><img src="{{ get_url(path='icons/linkedin-dark.png') }}" width="20px"></a>
-                    </figcaption>
-                </figure>
-            </li>
-
-            <li>
-                <figure class="person">
-                    <img src="{{ get_url(path='team/lukas.jpg') }}" alt="Lukas Dundulis">
-                    <figcaption>
-                        <p class="name">Lukas Dundulis</p>
-                        <p class="position">AI Intern</p>
-                        <p>BSc Math student @ ETH Zürich</p>
-                        <a href="https://www.linkedin.com/in/lukas-dundulis/"><img src="{{ get_url(path='icons/linkedin-dark.png') }}" width="20px"></a>
-                    </figcaption>
-                </figure>
-            </li>
-
-            <li>
-                <figure class="person">
-                    <img src="{{ get_url(path='team/kristijonas.jpg') }}" alt="Kristijonas Raudys">
-                    <figcaption>
-                        <p class="name">Kristijonas Raudys</p>
-                        <p class="position">Junior AI Researcher</p>
-                        <p>MSc Statistics student @ ETH Zürich</p>
-                        <a href="https://www.linkedin.com/in/kristijonasraudys/"><img src="{{ get_url(path='icons/linkedin-dark.png') }}"
-                                                                                      width="20px"></a>
-                    </figcaption>
-                </figure>
-            </li>
+            {% endfor %}
         </ul>
     </div>
 </section>
@@ -196,30 +140,20 @@
         <h2>Co-Founders</h2>
 
         <ul class="grid">
-            <li>
-                <figure class="person">
-                    <img src="{{ get_url(path='team/jurgis.jpg') }}" alt="Jurgis Pašukonis">
-                    <figcaption>
-                        <p class="name">Jurgis Pašukonis, PhD, MIT'05</p>
-                        <p class="position">Co-Founder</p>
-                        <p>Technological strategist, AI researcher & engineer / ex-Trafi</p>
-                        <a href="https://www.linkedin.com/in/jurgispasukonis/"><img src="{{ get_url(path='icons/linkedin-dark.png') }}"
-                                                                                    width="20px"></a>
-                    </figcaption>
-                </figure>
-            </li>
 
+            {% for c in data.founders %}
             <li>
                 <figure class="person">
-                    <img src="{{ get_url(path='team/tomas.jpg') }}" alt="Tomas Dirvonskas">
+                    <img src="{{get_url(path=c.img)}}" alt="{{c.name}}">
                     <figcaption>
-                        <p class="name">Tomas Dirvonskas</p>
-                        <p class="position">Co-Founder and Advisor</p>
-                        <p>Business strategist & customer experience lead of a team 100+ / ex-Treatwell</p>
-                        <a href="https://www.linkedin.com/in/tdirvonskas/"><img src="{{ get_url(path='icons/linkedin-dark.png') }}" width="20px"></a>
+                        <p class="name">{{c.name_long}}</p>
+                        <p class="position">{{c.position}}</p>
+                        <p>{{c.description}}</p>
+                        <a href="{{c.linkedin}}"><img src="{{ get_url(path='icons/linkedin-dark.png') }}" width="20px"></a>
                     </figcaption>
                 </figure>
             </li>
+            {% endfor %}
         </ul>
     </div>
 </section>

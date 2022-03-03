@@ -24,6 +24,8 @@ build_search_index = true
 
 [languages.en.translations]
 three_thirds = "Three Thirds"
+three = "three"
+thirds = "thirds"
 
 [languages.lt]
 generate_feed = true # there will be a feed for French content
@@ -31,3 +33,5 @@ build_search_index = true
 
 [languages.lt.translations]
 three_thirds = "Trys Trečiosios"
+three = "trys"
+thirds = "trečiosios"
