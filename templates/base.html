@@ -3,26 +3,34 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MyBlog</title>
+    <meta name="viewport"
+          content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <title>three/thirds</title>
+
+    <meta name="title" content="Three Thirds"/>
+    <meta name="description" content="AI Consulting"/>
+
+    <link rel="stylesheet" href="{{ get_url(path='css/style.css') }}">
+    <link rel="shortcut icon" id="favicon" href="{{ get_url(path='icons/favicon.png') }}">
+    <link rel="icon" href="{{ get_url(path='icons/favicon.svg') }}" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
+    <!-- No JavaScript in this page because we can and care. -->
 </head>
 
 <body>
-<section class="section">
-    <div class="container">
-        {% block content %} {% endblock %}
-    </div>
-</section>
+
+{% block content %} {% endblock %}
 
 <section class="section">
     <div class="container">
         <p>
             <a href="{{config.base_url}}/it{{ current_path | trim_start_matches(pat='/'~lang) }}">it</a>
             <a href="{{config.base_url}}/fr{{ current_path | trim_start_matches(pat='/'~lang) }}">fr</a>
-            <p> {{ lang }} </p>
+            currently: {{ lang }}
         </p>
     </div>
 </section>
 
 </body>
-
 </html>
