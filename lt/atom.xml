@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="lt">
+	<title></title>
+	<link href="http://psarka.github.io/zola/lt/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://psarka.github.io/zola"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2019-11-28T00:00:00+00:00</updated>
+	<id>http://psarka.github.io/zola/lt/atom.xml</id>
+	<entry xml:lang="lt">
+		<title>My second post</title>
+		<published>2019-11-28T00:00:00+00:00</published>
+		<updated>2019-11-28T00:00:00+00:00</updated>
+		<link href="http://psarka.github.io/zola/lt/blog/second/" type="text/html"/>
+		<id>http://psarka.github.io/zola/lt/blog/second/</id>
+		<content type="html">&lt;p&gt;This is my second blog post.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="lt">
+		<title>My first post</title>
+		<published>2019-11-27T00:00:00+00:00</published>
+		<updated>2019-11-27T00:00:00+00:00</updated>
+		<link href="http://psarka.github.io/zola/lt/blog/first/" type="text/html"/>
+		<id>http://psarka.github.io/zola/lt/blog/first/</id>
+		<content type="html">&lt;p&gt;This is my first blog post.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://psarka.github.io/zola/sitemap.xml

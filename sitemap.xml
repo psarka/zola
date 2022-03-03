@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://psarka.github.io/zola/</loc>
+    </url>
+    <url>
+        <loc>http://psarka.github.io/zola/en/</loc>
+    </url>
+    <url>
+        <loc>http://psarka.github.io/zola/en/blog/</loc>
+    </url>
+    <url>
+        <loc>http://psarka.github.io/zola/en/blog/first/</loc>
+        <lastmod>2019-11-27</lastmod>
+    </url>
+    <url>
+        <loc>http://psarka.github.io/zola/en/blog/second/</loc>
+        <lastmod>2019-11-28</lastmod>
+    </url>
+    <url>
+        <loc>http://psarka.github.io/zola/lt/</loc>
+    </url>
+    <url>
+        <loc>http://psarka.github.io/zola/lt/blog/</loc>
+    </url>
+    <url>
+        <loc>http://psarka.github.io/zola/lt/blog/first/</loc>
+        <lastmod>2019-11-27</lastmod>
+    </url>
+    <url>
+        <loc>http://psarka.github.io/zola/lt/blog/second/</loc>
+        <lastmod>2019-11-28</lastmod>
+    </url>
+</urlset>
