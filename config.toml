@@ -2,10 +2,13 @@
 base_url = "http://psarka.github.io/zola"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+
+# Silly Zola stuff
+default_language = "ua"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -15,20 +18,16 @@ highlight_code = false
 [extra]
 # Put all your custom variables here
 
-
-[languages.fr]
+[languages.en]
 generate_feed = true # there will be a feed for French content
 build_search_index = true
-taxonomies = [
-    {name = "auteurs"},
-    {name = "tags"},
-]
 
-[languages.fr.translations]
-summary = "Mon blog"
+[languages.en.translations]
+three_thirds = "Three Thirds"
 
-[languages.it]
-# Italian language doesn't have any taxonomies/feed/search index
+[languages.lt]
+generate_feed = true # there will be a feed for French content
+build_search_index = true
 
-[languages.it.translations]
-summary = "Mio blog"
+[languages.lt.translations]
+three_thirds = "Trys Trečiosios"
